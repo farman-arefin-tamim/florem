@@ -6,9 +6,7 @@ const AboutSection = () => {
         <div  className='bg-[#fff6ef] h-[70vh] w-full'>
             <div className='container mx-auto flex items-center justify-center'>
                 <div className='w-[50%]'>
-                    <Image src="/about.jpg" alt='about-img' width={600} height={200} 
-                        className='animate__animated animate__fadeInUp animate__delay-8s'
-                    />
+                    
                 </div>
                 <div className='w-[50%] space-y-3'>
                     <h3 className='text-amber-800 text-2xl font-semibold'>About Us</h3>
