@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Navbar = () => {
@@ -46,16 +47,13 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <Image src={"/logo.svg"} alt="logo" width={80} height={80} className="object-contain w-auto h-auto"/>
         </div>
-        <div className="navbar-center hidden lg:flex">
+        <div className="navbar-center hidden lg:flex text-[#2b1e16]">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a>Item 1</a>
-            </li>
-            <li>
               <details>
-                <summary>Parent</summary>
+                <summary>Home</summary>
                 <ul className="p-2 bg-base-100 w-40 z-1">
                   <li>
                     <a>Submenu 1</a>
@@ -67,7 +65,59 @@ const Navbar = () => {
               </details>
             </li>
             <li>
-              <a>Item 3</a>
+              <a>About Us</a>
+            </li>
+             <li>
+              <details>
+                <summary>Services</summary>
+                <ul className="p-2 bg-base-100 w-40 z-1">
+                  <li>
+                    <a>Submenu 1</a>
+                  </li>
+                  <li>
+                    <a>Submenu 2</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+             <li>
+              <details>
+                <summary>Pages</summary>
+                <ul className="p-2 bg-base-100 w-40 z-1">
+                  <li>
+                    <a>Submenu 1</a>
+                  </li>
+                  <li>
+                    <a>Submenu 2</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+             <li>
+              <details>
+                <summary>Shop</summary>
+                <ul className="p-2 bg-base-100 w-40 z-1">
+                  <li>
+                    <a>Submenu 1</a>
+                  </li>
+                  <li>
+                    <a>Submenu 2</a>
+                  </li>
+                </ul>
+              </details>
+            </li>
+             <li>
+              <details>
+                <summary>Blogs</summary>
+                <ul className="p-2 bg-base-100 w-40 z-1">
+                  <li>
+                    <a>Submenu 1</a>
+                  </li>
+                  <li>
+                    <a>Submenu 2</a>
+                  </li>
+                </ul>
+              </details>
             </li>
           </ul>
         </div>
