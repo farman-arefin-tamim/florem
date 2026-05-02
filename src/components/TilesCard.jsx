@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const TilesCard = ({ data }) => {
@@ -23,7 +24,9 @@ const TilesCard = ({ data }) => {
             </div>
         </div>
         <div className="card-actions justify-end">
-          <button className="btn btn-primary rounded-2xl">View Details</button>
+            <Link href={`/all-tiles/${data.id}`}>
+                    <button className="btn btn-primary rounded-2xl">View Details</button>
+            </Link>
         </div>
       </div>
     </div>

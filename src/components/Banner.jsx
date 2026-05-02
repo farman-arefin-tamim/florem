@@ -1,5 +1,6 @@
 import { Button } from "@heroui/react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Banner = () => {
@@ -27,9 +28,11 @@ const Banner = () => {
             <h2 className="text-[#2b1e16] text-2xl font-semibold text-center">
               All Tiles in One Place
             </h2>
-            <button className="btn bg-[#2b1e16] text-white rounded-full">
-              Browse Now
-            </button>
+            <Link href={"/all-tiles"}>
+              <button className="btn bg-[#2b1e16] text-white rounded-full">
+                Browse Now
+              </button>
+            </Link>
           </div>
         </div>
       </div>
