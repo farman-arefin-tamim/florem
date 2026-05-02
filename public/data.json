@@ -9,7 +9,7 @@
     "currency": "USD",
     "dimensions": "60x60 cm",
     "material": "Ceramic",
-    "inStock": true
+    "inStock": false
   },
   {
     "id": "02",
@@ -69,6 +69,6 @@
     "currency": "USD",
     "dimensions": "60x60 cm",
     "material": "Granite",
-    "inStock": true
+    "inStock": false
   }
 ]

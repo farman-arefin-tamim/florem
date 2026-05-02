@@ -1,5 +1,6 @@
 import { Button } from "@heroui/react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Navbar = () => {
@@ -59,20 +60,10 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex text-[#2b1e16]">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a>Home</a>
+              <Link href={"/"}>Home</Link>
             </li>
             <li>
-              <details>
-                <summary>All Tiles</summary>
-                <ul className="p-2 bg-base-100 w-40 z-1">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </details>
+                <Link href={"/all-tiles"}>All Tiles</Link>
             </li>
             <li>
               <a>About Us</a>
