@@ -2,6 +2,7 @@ import { Button } from "@heroui/react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import NavLink from "./NavLink";
 
 const Navbar = () => {
   return (
@@ -60,13 +61,13 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex text-[#2b1e16]">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <Link href={"/"}>Home</Link>
+              <NavLink href={"/"}>Home</NavLink>
             </li>
             <li>
-                <Link href={"/all-tiles"}>All Tiles</Link>
+                <NavLink href={"/all-tiles"}>All Tiles</NavLink>
             </li>
             <li>
-              <a>About Us</a>
+                <NavLink href={"/about"}>About Us</NavLink>
             </li>
           </ul>
         </div>
