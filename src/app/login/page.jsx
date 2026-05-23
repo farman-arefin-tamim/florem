@@ -68,7 +68,7 @@ export default function LoginPage() {
         <Form className="flex flex-col gap-4" onSubmit={onSubmit}>
           <TextField isRequired name="email" type="email" >
             <Label>Email</Label>
-            <Input placeholder="john@example.com"/>
+            <Input placeholder="tamim@example.com"/>
             <FieldError />
           </TextField>
 
