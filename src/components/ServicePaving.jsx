@@ -14,7 +14,7 @@ const welcomeMessages=[
 const ServicePaving = () => {
     return (
         <div>
-            <Marquee>
+            <Marquee className='overflow-hidden'>
             {welcomeMessages.map((text, index) => (
                  <div key={index} className="mx-8">
                  <div className='flex justify-center items-center gap-8'>
