@@ -41,6 +41,7 @@ export default function AllTilesPage() {
             onChange={(e) => setSearch(e.target.value)}
             className="input input-bordered w-full pl-11 rounded-full border-[#2b1e16] focus:border-[#2b1e16]"
           />
+          {/* this is comment */}
         </div>
       </div>
 
