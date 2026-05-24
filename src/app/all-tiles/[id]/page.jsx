@@ -4,7 +4,7 @@ import { FiArrowLeft } from "react-icons/fi";
 const TileDetailsPage = async ({ params }) => {
   const { id } = await params;
 
-  const res = await fetch(`${process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000"}`, {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000"}/data.json`, {
     cache: "no-store",
   });
   const tiles = await res.json();
