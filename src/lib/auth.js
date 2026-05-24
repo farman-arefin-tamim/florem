@@ -9,6 +9,9 @@ export const auth = betterAuth({
   database: mongodbAdapter(db, {
     client,
   }),
+  baseURL: process.env.BETTER_AUTH_URL || "https://florem.vercel.app",
+  secret: process.env.BETTER_AUTH_SECRET,
+  trustedOrigins: ["https://florem.vercel.app"],
   emailAndPassword: {
     enabled: true,
   },
