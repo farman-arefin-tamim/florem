@@ -3,7 +3,7 @@ import TilesCard from "./TilesCard";
 
 const FeaturedTiles = async () => {
   const res = await fetch(
-    `${process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000/data.json"}`,
+    `${process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000"}`,
     { cache: "no-store" }
   );
   const allTiles = await res.json();
